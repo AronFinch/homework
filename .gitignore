@@ -3,6 +3,7 @@
 *.idea
 META-INF/
 out/
+target/
 
 #ignore thumbnails created by windows
 Thumbs.db
