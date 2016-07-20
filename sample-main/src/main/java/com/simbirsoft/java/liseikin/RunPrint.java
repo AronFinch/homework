@@ -1,3 +1,9 @@
+package com.simbirsoft.java.liseikin;
+
+import com.simbirsoft.java.liseikin.PrintTextConsole;
+import com.simbirsoft.java.liseikin.PrintTextFile;
+import com.simbirsoft.java.liseikin.PrintTextI;
+
 /**
  * Created by Ivan on 20.07.2016.
  */

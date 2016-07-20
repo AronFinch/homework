@@ -1,3 +1,7 @@
+package com.simbirsoft.java.liseikin;
+
+import com.simbirsoft.java.liseikin.RunPrint;
+
 /**
  * Created by Ivan on 20.07.2016.
  */

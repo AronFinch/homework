@@ -1,3 +1,5 @@
+package com.simbirsoft.java.liseikin;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
