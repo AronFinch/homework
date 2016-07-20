@@ -1,6 +1,8 @@
 # IDEA files
 *.iml
 *.idea
+META-INF*/
+out*/
 
 #ignore thumbnails created by windows
 Thumbs.db
