@@ -3,9 +3,16 @@
 Перейдите в папку с программой с помощью команды:
 cd путь_к_файлу
 Пример: cd C:\Users\Admin\Downloads\maven_sample_project_jar
+Выполните команду:
+mvn clean install
+
+После сборки mvn можно пройти в локальный репозиторий и выполнить запуск в данной папке:
+<папка пользователя>\.m2\repository\com\simbirsoft\java\liseikin\sample-main\1.0-SNAPSHOT
+Пример:
+C:\Users\Ivan\.m2\repository\com\simbirsoft\java\liseikin\sample-main\1.0-SNAPSHOT
 
 Теперь вы можете приступать к запуску программы. Для этого нужно ввести в командную строку следующее:
-java -jar maven-sample-project.jar <параметр_1> <параметр_2>
+java -jar sample-main-1.0-SNAPSHOT.jar <параметр_1> <параметр_2>
 
 Параметр_1 может принимать значения 0 и 1.
 0 - если вы хотите вывести параметр_2 в командную строку;
@@ -14,9 +21,9 @@ java -jar maven-sample-project.jar <параметр_1> <параметр_2>
 Параметр_2 принимает строку для вывода в командную строку или на экран.
 
 Примеры вызовов:
-java -jar maven-sample-project.jar 0 "Hello Hell!"
+java -jar sample-main-1.0-SNAPSHOT.jar 0 "Hello Hell!"
 
-java -jar maven-sample-project.jar 1 "Hello Hell!"
+java -jar sample-main-1.0-SNAPSHOT.jar 1 "Hello Hell!"
 
 При неправильно введённых данных программа уведомит вас о наличии ошибки в параметрах и попросит перезапустить.
 
