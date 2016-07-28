@@ -11,10 +11,14 @@ public class RunPrint {
         } else if (version == 0) {
             print = new PrintTextConsole();
         }
-        print.printText(string);
+        if (string != null) {
+            print.printText(string);
+        } else {
+            System.out.println("outputMode = null");
+        }
 
     }
-    
+
     public static void main(String[] args) {
         try {
             int outputMode = Integer.parseInt(args[0]);
