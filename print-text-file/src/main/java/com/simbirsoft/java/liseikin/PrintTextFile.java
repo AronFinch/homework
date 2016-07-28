@@ -1,6 +1,7 @@
 package com.simbirsoft.java.liseikin;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -10,7 +11,7 @@ import java.io.IOException;
 public class PrintTextFile implements PrintTextI {
 
     public void printText(String string) {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\log.txt"))){
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + File.separator + "log.txt"))){
             bufferedWriter.write(java.lang.String.valueOf(string));
             bufferedWriter.flush();
         } catch (IOException e) {
