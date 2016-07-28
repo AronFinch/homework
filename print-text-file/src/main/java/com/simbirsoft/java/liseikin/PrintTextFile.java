@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class PrintTextFile implements PrintTextI {
 
-    public static void printText(String string) {
+    public void printText(String string) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\log.txt"))){
             bufferedWriter.write(java.lang.String.valueOf(string));
             bufferedWriter.flush();

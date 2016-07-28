@@ -5,7 +5,7 @@ package com.simbirsoft.java.liseikin;
  */
 public class PrintTextConsole implements PrintTextI {
 
-    public static void printText(String string) {
+    public void printText(String string) {
         System.out.println(string);
     }
 }

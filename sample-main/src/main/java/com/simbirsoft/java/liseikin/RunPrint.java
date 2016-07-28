@@ -6,11 +6,15 @@ package com.simbirsoft.java.liseikin;
 public class RunPrint {
     public static void run(int version, String string) {
         if (version == 1) {
-            PrintTextFile.printText(string);
+            runPrint(new PrintTextFile(), string);
         } else if (version == 0) {
-            PrintTextConsole.printText(string);
+            runPrint(new PrintTextConsole(), string);
         }
 
+    }
+
+    static void runPrint(PrintTextI outputMode, String string){
+        outputMode.printText(string);
     }
 
     public static void main(String[] args) {
