@@ -5,20 +5,18 @@ package com.simbirsoft.java.liseikin;
  */
 public class RunPrint {
     public static void run(int version, String string) {
+        PrintTextI print = null;
         if (version == 1) {
-            runPrint(new PrintTextFile(), string);
+            print = new PrintTextFile();
         } else if (version == 0) {
-            runPrint(new PrintTextConsole(), string);
+            print = new PrintTextConsole();
         }
+        print.printText(string);
 
     }
-
-    static void runPrint(PrintTextI outputMode, String string){
-        outputMode.printText(string);
-    }
-
+    
     public static void main(String[] args) {
-        try{
+        try {
             int outputMode = Integer.parseInt(args[0]);
             String text = args[1];
             RunPrint.run(outputMode, text);
